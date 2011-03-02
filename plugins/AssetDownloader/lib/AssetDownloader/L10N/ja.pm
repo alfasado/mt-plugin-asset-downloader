@@ -10,7 +10,5 @@ our %Lexicon = (
     'Login' => 'ログイン',
     'Permission' => '権限',
     'Require Login' => 'ログインを必須にする',
-    'Image' => '画像',
-    'Download Image' => '画像もダウンロードさせる',
     );
 1;
