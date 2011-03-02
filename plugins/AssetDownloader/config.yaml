@@ -1,0 +1,27 @@
+id  : AssetDownloader
+key : assetdownloader
+name: Asset Downloader
+version: 0.1
+author_name: Alfasado Inc.
+author_link: http://alfasado.net/
+description: <__trans phrase="Asset download it by an original file name.">
+l10n_class: AssetDownloader::L10N
+system_config_template: passwordexpired_cfg.tmpl
+config_settings:
+    DownloadScript:
+        default: mt-download.cgi
+settings:
+    requires_login:
+        Default: 0
+    require_permission:
+        Default: download
+permissions:
+    blog.download:
+          label: Download
+          group: blog_comment
+          order: 200
+tags:
+    function:
+        DownloadScript: $assetdownloader::AssetDownloader::Tags::_hdlr_download_script
+    modifier:
+        url2download:   $assetdownloader::AssetDownloader::Tags::_filter_url2download

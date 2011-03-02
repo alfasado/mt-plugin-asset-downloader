@@ -1,0 +1,21 @@
+<mtapp:setting
+    id="requires_login"
+    label="<__trans phrase="Login">">
+<ul>
+<li><label><input type="checkbox" id="requires_login" name="requires_login" <mt:if name="requires_login">checked="checked"</mt:if> /> <__trans phrase="Require Login"></label></li>
+</ul>
+</mtapp:setting>
+<mtapp:setting
+    id="require_permission"
+    label="<__trans phrase="Permission">">
+<ul>
+<li><input type="text" id="require_permission" name="require_permission" value="<mt:var name="require_permission" escape="html">" /></li>
+</ul>
+</mtapp:setting>
+<mtapp:setting
+    id="download_image"
+    label="<__trans phrase="Image">">
+<ul>
+<li><label><input type="checkbox" id="download_image" name="download_image" <mt:if name="download_image">checked="checked"</mt:if> /> <__trans phrase="Download Image"></label></li>
+</ul>
+</mtapp:setting>
