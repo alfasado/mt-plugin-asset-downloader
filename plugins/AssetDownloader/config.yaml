@@ -6,7 +6,7 @@ author_name: Alfasado Inc.
 author_link: http://alfasado.net/
 description: <__trans phrase="Asset download it by an original file name.">
 l10n_class: AssetDownloader::L10N
-system_config_template: passwordexpired_cfg.tmpl
+system_config_template: download_cfg.tmpl
 config_settings:
     DownloadScript:
         default: mt-download.cgi
@@ -15,6 +15,8 @@ settings:
         Default: 0
     require_permission:
         Default: download
+    download_image:
+        Default: 0
 permissions:
     blog.download:
           label: Download
